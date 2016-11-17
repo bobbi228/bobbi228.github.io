@@ -108,7 +108,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 	$('#portfolio_grid').mixItUp({
-			animation: {
+		animation: {
 		duration: 400,
 		effects: 'fade translateZ(-360px) stagger(34ms)',
 		easing: 'ease'
@@ -212,27 +212,6 @@ $(".cmn-toggle-switch").click(function(){
 	// });
 
 
-	$(document).mouseup(function (e)
-	{ 
-		var div = $(".top-mnu-wrap ul li form");
-		var div1 = $(".top-mnu-wrap ul .drop-li-search")
-		var div2 = $(".top-mnu-wrap ul li .tab1");
-		var div3 = $(".top-mnu-wrap ul li a .fa-search")
-		if (!div.is(e.target)  && div.has(e.target).length === 0  && div1.hasClass("open")  )
-		{
-			$(".top-mnu-wrap ul li form").addClass("hidden-search");
-			$(".top-mnu-wrap ul .drop-li-search").removeClass("open");
-			$(".top-mnu-wrap ul .drop-li-search i").addClass("fa-search");
-			$(".top-mnu-wrap ul .drop-li-search i").removeClass("fa-times");
-		}	
-		else if(div2.is(e.target) || div3.is(e.target))
-		{
-			$(".top-mnu-wrap ul li form").removeClass("hidden-search");
-			$(".top-mnu-wrap ul .drop-li-search").addClass("open");
-			$(".top-mnu-wrap ul .drop-li-search i").removeClass("fa-search");
-			$(".top-mnu-wrap ul .drop-li-search i").addClass("fa-times");
-		}
-	});
 
 
 
